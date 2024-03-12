@@ -1,0 +1,87 @@
+
+/*=========================================
+詳細ページデザイン
+-----------------------------------------*/
+.path{
+margin-top:50px;
+font-size:80%;
+}
+
+.path ul li{
+list-style:none;
+padding:0 5px;
+}
+
+.path ul li:after{
+content:"\03e";
+padding-left:5px;
+}
+
+.path ul li:last-child:after{
+display:none;
+}
+
+.path a{
+color:#999;
+}
+article{
+margin-top:50px;
+}
+article h1{
+margin-bottom:30px;
+}
+
+
+article img{
+width:100%;
+}
+
+article .product_thumnail{
+margin-bottom:30px;
+}
+
+article .product_thumnail li{
+list-style:none;
+margin-left:30px;
+}
+
+article .product_thumnail li:first-child{
+margin-left:0;
+}
+
+article .product_thumnail img{
+border:1px solid #aaa;
+}
+
+/* プロフィール詳細 */
+article .profile_introduction{
+margin-bottom:30px;
+}
+
+article .profile_introduction dl{
+display:flex;
+flex-wrap:wrap;
+}
+
+article .profile_introduction dt{
+width:150px;
+}
+
+article .profile_detail{
+display:flex;
+flex-wrap:wrap;
+}
+article .profile_detail dt{
+margin:10px 0;
+width:30%;
+}
+article .profile_detail dd{
+margin:10px 0;
+width:70%;
+}
+article .profile_detail ul{
+margin:10px ;
+}
+article .profile_detail li{
+list-style-position: inside;
+}
