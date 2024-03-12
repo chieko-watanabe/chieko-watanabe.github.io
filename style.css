@@ -52,15 +52,22 @@ align-items:flex-end;
 
 header .sitetitle{
 font-size:1.5rem;
+font-weight: bold;
+}
+
+header .sitetitle a{
+text-decoration: none;
+color: #333;
 }
 
 nav ul{
 display:flex;
+justify-content:flex-end;
 }
 
 nav ul li{
 list-style:none;
-padding	: 0 10px;
+padding-left: 10px;
 }
 
 
@@ -79,7 +86,7 @@ text-decoration:none;
 }
 
 nav ul li a:hover{
-color:#fff;
+text-decoration:underline;
 }
 
 /* article */
@@ -100,18 +107,30 @@ margin-bottom:10px;
 article section{
 margin-bottom:20px;
 }
-
-article .go_to_head{
+article .go_to_head,
+article .to_back{
 margin-top:30px;
 text-align:right;
 }
 
-article .go_to_head a{
+article .go_to_head a,
+article .to_back a{
 color:#999;
+text-decoration:none;
+}
+
+article .go_to_head a:hover,
+article .to_back a:hover{
+text-decoration:underline;
 }
 
 article .go_to_head a:before{
-content:"▲";
+content:"\025b2";
+padding-right:5px;
+}
+
+article .to_back a:before{
+content:"\0ab";
 padding-right:5px;
 }
 
@@ -124,10 +143,13 @@ background:#ddd;
 footer .page_wrap{
 padding-top:20px;
 padding-bottom:10px;
+display:flex;
+justify-content:space-between;
 }
 
 footer nav{
 margin-bottom:20px;
+font-size:80%;
 }
 
 footer p.copyright{
@@ -141,9 +163,7 @@ page_design
 /* プロフィール */
 #profile_wrap{
 margin-bottom:50px;
-width:1000px;
-margin-right:auto;
-margin-left:auto;
+justify-content:flex-end;
 }
 
 #profile_wrap img{
@@ -176,7 +196,7 @@ text-align:right;
 #profile_wrap .prof_button a{
 display:inline-block;
 background:#aaa;
-padding:5px 10px 5px 25px;
+padding:10px 10px 10px 25px;
 color:#fff;
 text-decoration:none;
 position:relative;
