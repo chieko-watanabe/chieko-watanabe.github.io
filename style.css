@@ -10,6 +10,7 @@ box-sizing:border-box;
 
 html{
 font-size:16px;
+scroll-behavior: smooth;
 }
 
 body {
@@ -41,8 +42,8 @@ background:#ddd;
 }
 
 header .page_wrap{
-padding-top:10px;
-padding-bottom:10px;
+padding-top:20px;
+padding-bottom:20px;
 display:flex;
 flex-wrap:nowrap;
 justify-content:space-between;
@@ -100,6 +101,20 @@ article section{
 margin-bottom:20px;
 }
 
+article .go_to_head{
+margin-top:30px;
+text-align:right;
+}
+
+article .go_to_head a{
+color:#999;
+}
+
+article .go_to_head a:before{
+content:"▲";
+padding-right:5px;
+}
+
 
 /* footer */
 footer{
@@ -107,12 +122,12 @@ background:#ddd;
 }
 
 footer .page_wrap{
-padding-top:10px;
+padding-top:20px;
 padding-bottom:10px;
 }
 
 footer nav{
-margin-bottom:30px;
+margin-bottom:20px;
 }
 
 footer p.copyright{
@@ -218,8 +233,50 @@ display:block;
 position:absolute;
 display:block;
 width:100%;
-background:#666;
+background:rgba(25,25,25,0.75);
 color:#fff;
 bottom:0;
-padding:5px;
+padding:5px 10px;
+}
+
+/* スキル */
+
+#personal_wrap table{
+margin-bottom:30px;
+width:100%;
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+#personal_wrap table caption{
+text-align:left;
+padding: 5px 10px;
+font-weight: bold;
+}
+
+#personal_wrap table tr th:first-child{
+width:30%;
+}
+
+/* tableデザイン */
+#personal_wrap table th,table td{
+padding: 10px 0;
+text-align: center;
+}
+
+#personal_wrap table tr:nth-child(even){
+background-color: #eee
+}
+
+#personal_wrap table th{
+border-bottom:1px solid #ccc;
+}
+
+#personal_wrap table td{
+border-bottom:1px solid #ccc;
+}
+
+#personal_wrap table td.align_left{
+text-align:left;
+padding-left:20px;
 }
