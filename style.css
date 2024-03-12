@@ -1,0 +1,68 @@
+/*=========================================
+base
+-----------------------------------------*/
+*{
+margin:0;
+padding:0;
+background:none;
+box-sizing:border-box;
+}
+
+html{
+font-size:16px;
+font-family
+}
+
+body {
+font-family:"MS Pゴシック",sans-serif;
+}
+
+.page_wrap{
+width:100%;
+max-width:1200px;
+margin:0 auto;
+padding-right:20px;
+padding-left:20px;
+
+}
+
+.flex_box{
+display:flex;
+flex-wrap:nowrap;
+}
+/*=========================================
+template
+-----------------------------------------*/
+
+/* header */
+header{
+background:#ddd;
+}
+
+/* article */
+#profile img{
+max-width:300px;
+max-height:300px;
+border-radius:150px;
+}
+
+#profile dl{
+display:flex;
+flex-wrap:wrap;
+}
+
+#profile dl dt{
+width:30%;
+}
+
+#profile dl dd{
+width:70%;
+}
+/* footer */
+footer{
+background:#ddd;
+}
+
+footer p.copyright{
+font-size:80%;
+}
