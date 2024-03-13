@@ -1,45 +1,45 @@
 /*=========================================
 base
 -----------------------------------------*/
-*{
-margin:0;
-padding:0;
-background:none;
-box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-sizing: border-box;
 }
 
-html{
-scroll-behavior: smooth;
-font-size:16px;
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
-font-family:"MS Pゴシック",sans-serif;
-color:#333;
-line-height:1.5;
-font-size:16px;
+  font-family: "MS Pゴシック", sans-serif;
+  color: #333;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
-.page_wrap{
-width:100%;
-max-width:1200px;
-margin-right:auto;
-margin-left:auto;
-padding-right:20px;
-padding-left:20px;
+.page_wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.flex_box{
-display:flex;
-flex-wrap:nowrap;
+.flex_box {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-img{
-vertical-align:bottom;
+img {
+  vertical-align: bottom;
 }
 
-p,ul,li,dl{
-font-size:1rem;
+p, ul, li, dl {
+  font-size: 1rem;
 }
 
 /*=========================================
@@ -47,135 +47,135 @@ template
 -----------------------------------------*/
 
 /* header */
-header{
-background:#d9d6c6;
+header {
+  background: #d9d6c6;
 }
 
-header .page_wrap{
-padding-top:20px;
-padding-bottom:20px;
-display:flex;
-flex-wrap:nowrap;
-justify-content:space-between;
-align-items:flex-end;
+header .page_wrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-header .sitetitle{
-font-size:1.5rem;
-font-weight: bold;
+header .sitetitle {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-header .sitetitle a{
-text-decoration: none;
-color: #333;
+header .sitetitle a {
+  text-decoration: none;
+  color: #333;
 }
 
-nav ul{
-display:flex;
-justify-content:flex-end;
+nav ul {
+  display: flex;
+  justify-content: flex-end;
 }
 
-nav ul li{
-list-style:none;
-padding-left: 10px;
+nav ul li {
+  list-style: none;
+  padding-left: 10px;
 }
 
 
-nav ul li::after{
-padding-left:10px;
-content:"/";
+nav ul li::after {
+  padding-left: 10px;
+  content: "/";
 }
 
-nav ul li:last-child::after{
-display:none;
+nav ul li:last-child::after {
+  display: none;
 }
 
-nav ul li a{
-color:#333;
-text-decoration:none;
+nav ul li a {
+  color: #333;
+  text-decoration: none;
 }
 
-nav ul li a:hover{
-text-decoration:underline;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 /* article */
 
-article{
-margin-top:50px;
-margin-bottom:50px;
+article {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-article h1{
-margin-bottom:50px;
-font-size:1.5rem;
-font-weight:bold;
+article h1 {
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-article h2{
-margin-bottom:20px;
-font-size:1.5rem;
-font-weight:normal;
+article h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
-article h3{
-margin-bottom:15px;
-font-size:1.17rem;
-font-weight:normal;
+article h3 {
+  margin-bottom: 15px;
+  font-size: 1.17rem;
+  font-weight: normal;
 }
 
-article section{
-margin-bottom:30px;
+article section {
+  margin-bottom: 30px;
 }
 
 article .go_to_head,
-article .to_back{
-margin-top:30px;
-text-align:right;
+article .to_back {
+  margin-top: 30px;
+  text-align: right;
 }
 
 article .go_to_head a,
-article .to_back a{
-color:#999;
-text-decoration:none;
+article .to_back a {
+  color: #999;
+  text-decoration: none;
 }
 
 article .go_to_head a:hover,
-article .to_back a:hover{
-text-decoration:underline;
+article .to_back a:hover {
+  text-decoration: underline;
 }
 
-article .go_to_head a:before{
-content:"\025b2";
-padding-right:5px;
+article .go_to_head a:before {
+  content: "\025b2";
+  padding-right: 5px;
 }
 
-article .to_back a:before{
-content:"\0ab";
-padding-right:5px;
+article .to_back a:before {
+  content: "\0ab";
+  padding-right: 5px;
 }
 
 
 /* footer */
-footer{
-background:#d9d6c6;
+footer {
+  background: #d9d6c6;
 }
 
-footer .page_wrap{
-padding-top:20px;
-padding-bottom:10px;
-display:flex;
-justify-content:space-between;
+footer .page_wrap {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-footer nav{
-margin-bottom:20px;
-font-size:80%;
+footer nav {
+  margin-bottom: 20px;
+  font-size: 80%;
 }
 
-footer p.copyright{
-font-size:80%;
-text-align:right;
+footer p.copyright {
+  font-size: 80%;
+  text-align: right;
 }
 
 /*=========================================
@@ -183,205 +183,205 @@ text-align:right;
 -----------------------------------------*/
 /*icon color rgb(89, 146, 112)*/
 
-#toppage h2{
-padding-left:40px;
-background-position: 0px 5px;
-background-repeat:no-repeat;
-background-size	:30px;
-position:relative;
+#toppage h2 {
+  padding-left: 40px;
+  background-position: 0px 5px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  position: relative;
 }
 
-#toppage h2:after{
-content:"";
-width:100%;
-height:5px;
- background-image : linear-gradient(to right, #d9d6c6 3px, transparent 3px);
- background-size: 13px 4px;
- background-repeat: repeat-x;
-position:absolute;
-left:0;
-bottom:-6px;
+#toppage h2:after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(to right, #d9d6c6 3px, transparent 3px);
+  background-size: 13px 4px;
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
 }
 
-#toppage h3{
-padding-left:10px;
-border-left:5px solid #a2d1b5;
-font-weight:normal;
-line-height:1.2;
+#toppage h3 {
+  padding-left: 10px;
+  border-left: 5px solid #a2d1b5;
+  font-weight: normal;
+  line-height: 1.2;
 }
 
 /*-----------------------------------------*/
 /* プロフィール */
-#profile_wrap{
-margin-bottom:50px;
-justify-content:flex-end;
+#profile_wrap {
+  margin-bottom: 50px;
+  justify-content: flex-end;
 }
 
-#profile_wrap h2{
-padding-top:3px;
-background-image:url(img/plofile_h2.png);
+#profile_wrap h2 {
+  padding-top: 3px;
+  background-image: url(img/plofile_h2.png);
 }
 
-#profile_wrap h3{
+#profile_wrap h3 {}
+
+#profile_wrap img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 150px;
 }
 
-#profile_wrap img{
-max-width:300px;
-max-height:300px;
-border-radius:150px;
+#profile_wrap .profile_content {
+  margin-left: 60px;
 }
 
-#profile_wrap .profile_content{
-margin-left:60px;
+#profile_wrap dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-#profile_wrap dl{
-display:flex;
-flex-wrap:wrap;
-margin-bottom:20px;
+#profile_wrap dl dt {
+  width: 30%;
 }
 
-#profile_wrap dl dt{
-width:30%;
+#profile_wrap dl dd {
+  width: 70%;
 }
 
-#profile_wrap dl dd{
-width:70%;
-}
-#profile_wrap .prof_button{
-text-align:right;
+#profile_wrap .prof_button {
+  text-align: right;
 }
 
-#profile_wrap .prof_button a{
-display:inline-block;
-background:#82b797;
-padding:10px 10px 10px 25px;
-color:#fff;
-text-decoration:none;
-border-radius:3px;
-position:relative;
+#profile_wrap .prof_button a {
+  display: inline-block;
+  background: #82b797;
+  padding: 10px 10px 10px 25px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  position: relative;
 }
 
-#profile_wrap .prof_button a::before{
-display:block;
-content:"";
-width:8px;
-height:8px;
-border:2px solid #fff;
-border-left:transparent;
-border-bottom:transparent;
-position:absolute;
-left:7px;
-top:50%;
-transform:translateY(-50%) rotate(45deg);
+#profile_wrap .prof_button a::before {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-left: transparent;
+  border-bottom: transparent;
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
 }
 
-#profile_wrap .prof_button a:hover{
-background:#709487;
+#profile_wrap .prof_button a:hover {
+  background: #709487;
 }
 
 /* 制作実績 */
-#works_wrap h2{
-padding-top:5px;
-background-image:url(img/works_h2.png);
+#works_wrap h2 {
+  padding-top: 5px;
+  background-image: url(img/works_h2.png);
 }
 
 
-#works_wrap ul{
-display:flex;
-flex-wrap:wrap;
-justify-content:space-between;
+#works_wrap ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-#works_wrap ul li{
-list-style:none;
-width:30%;
-height:200px;
-margin-bottom:20px;
-border:1px solid #ccc;
-overflow:hidden;
-position:relative;
-background:#588977;
+#works_wrap ul li {
+  list-style: none;
+  width: 30%;
+  height: 200px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+  background: #588977;
 
 }
 
-#works_wrap ul li img{
-width:100%;
-object-fit:cover;
+#works_wrap ul li img {
+  width: 100%;
+  object-fit: cover;
 }
 
 
-#works_wrap ul li img:hover{
-opacity:0.8;
+#works_wrap ul li img:hover {
+  opacity: 0.8;
 }
 
-#works_wrap ul li a{
-display:block;
+#works_wrap ul li a {
+  display: block;
 }
 
-#works_wrap ul li a span{
-position:absolute;
-display:block;
-width:100%;
-background:rgba(25,25,25,0.75);
-color:#fff;
-bottom:0;
-padding:5px 10px;
+#works_wrap ul li a span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background: rgba(25, 25, 25, 0.75);
+  color: #fff;
+  bottom: 0;
+  padding: 5px 10px;
 }
 
 /* スキル */
-#personal_wrap h2{
-margin-top:3px;
-padding-top:2px;
-background-image:url(img/personal_h2.png);
+#personal_wrap h2 {
+  margin-top: 3px;
+  padding-top: 2px;
+  background-image: url(img/personal_h2.png);
 }
 
 /* tableデザイン */
-#personal_wrap table{
-margin-bottom:30px;
-width:100%;
-border-collapse: collapse;
-border-spacing: 0;
+#personal_wrap table {
+  margin-bottom: 30px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-#personal_wrap table caption{
-text-align:left;
-padding: 5px 10px;
+#personal_wrap table caption {
+  text-align: left;
+  padding: 5px 10px;
 }
 
-#personal_wrap table tr th:first-child{
-width:25%;
+#personal_wrap table tr th:first-child {
+  width: 25%;
 }
 
-#personal_wrap table thead tr{
-background:#a2d1b5;
+#personal_wrap table thead tr {
+  background: #a2d1b5;
 }
 
-#personal_wrap table thead th:first-child{
-border-right:2px dotted #fff;
-border-radius:5px 0 0 0;
+#personal_wrap table thead th:first-child {
+  border-right: 2px dotted #fff;
+  border-radius: 5px 0 0 0;
 }
 
-#personal_wrap table thead th:last-child{
-border-radius:0 5px 0 0;
+#personal_wrap table thead th:last-child {
+  border-radius: 0 5px 0 0;
 }
 
-#personal_wrap table th,table td{
-padding: 10px 5px;
-text-align: center;
-border-bottom:1px solid #ccc;
+#personal_wrap table th, table td {
+  padding: 10px 5px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
 }
 
-#personal_wrap table th:first-child{
-border-right:2px dotted #ccc;
+#personal_wrap table th:first-child {
+  border-right: 2px dotted #ccc;
 }
 
-#personal_wrap table tr:nth-child(even){
-background-color: #fbfaf9;
+#personal_wrap table tr:nth-child(even) {
+  background-color: #fbfaf9;
 }
 
 
-#personal_wrap table td.align_left{
-text-align:left;
-padding-left:20px;
+#personal_wrap table td.align_left {
+  text-align: left;
+  padding-left: 20px;
 }

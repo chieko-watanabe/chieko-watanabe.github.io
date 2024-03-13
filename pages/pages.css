@@ -1,222 +1,227 @@
-
 /*=========================================
 詳細ページデザイン
 -----------------------------------------*/
 /* ぱんくず */
-.path{
-margin-top:50px;
+.path {
+  margin-top: 50px;
 }
 
-.path ul li{
-padding:0 5px;
-list-style:none;
-font-size:80%;
+.path ul li {
+  padding: 0 5px;
+  list-style: none;
+  font-size: 80%;
 }
 
-.path ul li:after{
-content:"\03e";
-padding-left:5px;
+.path ul li:after {
+  content: "\03e";
+  padding-left: 5px;
 }
 
-.path ul li:last-child:after{
-display:none;
+.path ul li:last-child:after {
+  display: none;
 }
 
-.path a{
-color:#999;
+.path a {
+  color: #999;
 }
 
 /* メインコンテンツ */
-article{
-margin-top:50px;
+article {
+  margin-top: 50px;
 }
 
-article h1{
-padding:15px 20px;
-background: repeating-linear-gradient(135deg, #e8faf4, #e8faf4 5px, #fff 5px, #fff 20px);
-display:block;
-text-align:center;
-position:relative;
+article h1 {
+  padding: 15px 20px;
+  background: repeating-linear-gradient(135deg, #e8faf4, #e8faf4 5px, #fff 5px, #fff 20px);
+  display: block;
+  text-align: center;
+  position: relative;
 }
 
 article h1:before,
-article h1:after{
-display:block;
-position:absolute;
-content:"";
-width:30px;
-height:30px;
+article h1:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
 
 }
 
-article h1:before{
-border-top:2px solid #6f998a;
-border-left:2px solid #6f998a;
-top:0;
-left:0;
+article h1:before {
+  border-top: 2px solid #6f998a;
+  border-left: 2px solid #6f998a;
+  top: 0;
+  left: 0;
 }
 
-article h1:after{
-border-bottom:2px solid #6f998a;
-border-right:2px solid #6f998a;
-bottom:0;
-right:0;
+article h1:after {
+  border-bottom: 2px solid #6f998a;
+  border-right: 2px solid #6f998a;
+  bottom: 0;
+  right: 0;
 }
 
-article img{
-width:100%;
+article img {
+  width: 100%;
 }
 
-article .supplement{
-color: #999;
-font-size:95%;
+article .supplement {
+  color: #999;
+  font-size: 95%;
 }
 
 /* -----------------------------------------*/
 
 /* 作例表示 */
-article .product_thumnail{
-margin-bottom:30px;
+article .product_thumnail {
+  margin-bottom: 30px;
 }
 
-article .product_thumnail li{
-list-style:none;
-margin-left:30px;
+article .product_thumnail li {
+  list-style: none;
+  margin-left: 30px;
 }
 
-article .product_thumnail li:first-child{
-margin-left:0;
+article .product_thumnail li:first-child {
+  margin-left: 0;
 }
 
-article .product_thumnail img{
-border:1px solid #aaa;
+article .product_thumnail img {
+  border: 1px solid #aaa;
 }
 
-article .product_thumnail img.none{
-border:none;
+article .product_thumnail img.none {
+  border: none;
 }
 
 /* 作例　2列表示 */
-article .product_thumnail .two_columun{
-  flex-wrap:wrap;
+article .product_thumnail .two_columun {
+  flex-wrap: wrap;
 }
 
 article .product_thumnail .two_columun li:nth-child(odd) {
-margin-left:0;
+  margin-left: 0;
 }
 
 
 /* 制作情報 */
-.works_info{
-background:#eef1e5;
-border-radius:5px;
+.works_info {
+  background: #eef1e5;
+  border-radius: 5px;
 }
 
-.works_info.flex_box{
-flex-wrap:wrap;
+.works_info.flex_box {
+  flex-wrap: wrap;
 }
 
-.works_info h2{
-margin-bottom:10px;
-padding:20px 20px 10px 40px;
-border-radius:5px 5px 0 0;
-width:100%;
-font-size:1rem;
-font-weight:bold;
-background:#a2d1b5;
-position:relative;
+.works_info h2 {
+  margin-bottom: 10px;
+  padding: 20px 20px 10px 40px;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #a2d1b5;
+  position: relative;
 }
 
-.works_info h2:before{
-content:"\0bb";
-color:#fff;
-padding-right:10px;
-position:absolute;
-top:20px;
-left:20px;
+.works_info h2:before {
+  content: "\0bb";
+  color: #fff;
+  padding-right: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-.works_info h3{
-margin-bottom:5px;
-font-size:1rem;
+.works_info h3 {
+  margin-bottom: 5px;
+  font-size: 1rem;
 }
 
-.works_info h3:before{
-content:"【"
-}
-.works_info h3:after{
-content:"】"
+.works_info h3:before {
+  content: "【"
 }
 
-.works_info>div{
-width:50%;
-}
-.works_info .left{
-padding:0 20px 20px 20px;
-background-image : linear-gradient(to bottom, #fff 3px, transparent 3px);
-background-size: 3px 12px;
-background-repeat: repeat-y;
-background-position:top right;
+.works_info h3:after {
+  content: "】"
 }
 
-.works_info .right{
-padding-left:0;
+.works_info>div {
+  width: 50%;
 }
 
-.works_info .right div{
-padding:20px;
-background-image : linear-gradient(to right, #fff 3px, transparent 3px);
-background-size: 12px 3px;
-background-repeat: repeat-x;
-background-position:top left;
+.works_info .left {
+  padding: 0 20px 20px 20px;
+  background-image: linear-gradient(to bottom, #fff 3px, transparent 3px);
+  background-size: 3px 12px;
+  background-repeat: repeat-y;
+  background-position: top right;
 }
 
-.works_info .right div:first-child{
-padding-top:0;
-background:none;
+.works_info .right {
+  padding-left: 0;
 }
 
-.works_desc h2{
-padding-top:5px;
-padding-left:40px;
-background-image:url(img/works_desc_h2.png);
-background-position: 0px 5px;
-background-repeat:no-repeat;
-background-size	:30px;
+.works_info .right div {
+  padding: 20px;
+  background-image: linear-gradient(to right, #fff 3px, transparent 3px);
+  background-size: 12px 3px;
+  background-repeat: repeat-x;
+  background-position: top left;
+}
+
+.works_info .right div:first-child {
+  padding-top: 0;
+  background: none;
+}
+
+.works_desc h2 {
+  padding-top: 5px;
+  padding-left: 40px;
+  background-image: url(img/works_desc_h2.png);
+  background-position: 0px 5px;
+  background-repeat: no-repeat;
+  background-size: 30px;
 }
 
 
 /* -----------------------------------------*/
 
 /* プロフィールページ */
-article .profile_introduction{
-margin-bottom:30px;
+article .profile_introduction {
+  margin-bottom: 30px;
 }
 
-article .profile_introduction dl{
-display:flex;
-flex-wrap:wrap;
+article .profile_introduction dl {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-article .profile_introduction dt{
-width:150px;
+article .profile_introduction dt {
+  width: 150px;
 }
 
-article .profile_detail{
-display:flex;
-flex-wrap:wrap;
+article .profile_detail {
+  display: flex;
+  flex-wrap: wrap;
 }
-article .profile_detail dt{
-margin:10px 0;
-width:25%;
+
+article .profile_detail dt {
+  margin: 10px 0;
+  width: 25%;
 }
-article .profile_detail dd{
-margin:10px 0;
-width:75%;
+
+article .profile_detail dd {
+  margin: 10px 0;
+  width: 75%;
 }
-article .profile_detail ul{
-margin:10px ;
+
+article .profile_detail ul {
+  margin: 10px;
 }
-article .profile_detail li{
-list-style-position: inside;
+
+article .profile_detail li {
+  list-style-position: inside;
 }
