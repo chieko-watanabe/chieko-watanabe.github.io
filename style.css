@@ -32,13 +32,18 @@ padding-left:20px;
 display:flex;
 flex-wrap:nowrap;
 }
+
+img{
+vertical-align:bottom;
+}
+
 /*=========================================
 template
 -----------------------------------------*/
 
 /* header */
 header{
-background:#ddd;
+background:#e3e2dd;
 }
 
 header .page_wrap{
@@ -105,8 +110,9 @@ margin-bottom:10px;
 }
 
 article section{
-margin-bottom:20px;
+margin-bottom:30px;
 }
+
 article .go_to_head,
 article .to_back{
 margin-top:30px;
@@ -137,7 +143,7 @@ padding-right:5px;
 
 /* footer */
 footer{
-background:#ddd;
+background:#e3e2dd;
 }
 
 footer .page_wrap{
@@ -158,12 +164,17 @@ text-align:right;
 }
 
 /*=========================================
-page_design
+　トップページ
 -----------------------------------------*/
 /* プロフィール */
 #profile_wrap{
 margin-bottom:50px;
 justify-content:flex-end;
+}
+
+#profile_wrap h2{
+padding-left:35px;
+background:url(img/plofile_h2.png) no-repeat 0px 5px;
 }
 
 #profile_wrap img{
@@ -195,29 +206,30 @@ text-align:right;
 
 #profile_wrap .prof_button a{
 display:inline-block;
-background:#aaa;
+background:#84b1a0;
 padding:10px 10px 10px 25px;
 color:#fff;
 text-decoration:none;
+border-radius:3px;
 position:relative;
 }
 
 #profile_wrap .prof_button a::before{
 display:block;
 content:"";
-width:10px;
-height:10px;
+width:8px;
+height:8px;
 border:2px solid #fff;
 border-left:transparent;
 border-bottom:transparent;
 position:absolute;
-left:5px;
+left:7px;
 top:50%;
 transform:translateY(-50%) rotate(45deg);
 }
 
 #profile_wrap .prof_button a:hover{
-background:#999;
+background:#709487;
 }
 
 /* 制作実績 */
@@ -236,6 +248,7 @@ margin-bottom:20px;
 border:1px solid #ccc;
 overflow:hidden;
 position:relative;
+background:#588977;
 
 }
 
@@ -244,10 +257,14 @@ width:100%;
 object-fit:cover;
 }
 
+
+#works_wrap ul li img:hover{
+opacity:0.8;
+}
+
 #works_wrap ul li a{
 display:block;
 }
-
 
 #works_wrap ul li a span{
 position:absolute;
