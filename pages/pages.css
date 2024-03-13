@@ -2,6 +2,7 @@
 /*=========================================
 詳細ページデザイン
 -----------------------------------------*/
+/* ぱんくず */
 .path{
 margin-top:50px;
 font-size:80%;
@@ -24,18 +25,55 @@ display:none;
 .path a{
 color:#999;
 }
+
+/* メインコンテンツ */
 article{
 margin-top:50px;
 }
+
 article h1{
+padding:15px 20px;
 margin-bottom:30px;
+background: repeating-linear-gradient(135deg, #e8faf4, #e8faf4 5px, #fff 5px, #fff 20px);
+display:block;
+text-align:center;
+position:relative;
+}
+article h1:before,
+article h1:after{
+display:block;
+position:absolute;
+content:"";
+width:30px;
+height:30px;
+
 }
 
+article h1:before{
+border-top:2px solid #6f998a;
+border-left:2px solid #6f998a;
+top:0;
+left:0;
+}
+
+article h1:after{
+border-bottom:2px solid #6f998a;
+border-right:2px solid #6f998a;
+bottom:0;
+right:0;
+}
 
 article img{
 width:100%;
 }
 
+article .supplement{
+color: #999;
+font-size:95%;
+}
+
+
+/* 作例表示 */
 article .product_thumnail{
 margin-bottom:30px;
 }
@@ -53,7 +91,20 @@ article .product_thumnail img{
 border:1px solid #aaa;
 }
 
-/* プロフィール詳細 */
+article .product_thumnail img.none{
+border:none;
+}
+
+/* 作例　2列表示 */
+article .product_thumnail .two_columun{
+  flex-wrap:wrap;
+}
+
+article .product_thumnail .two_columun li:nth-child(odd) {
+margin-left:0;
+}
+
+/* プロフィールページ */
 article .profile_introduction{
 margin-bottom:30px;
 }
@@ -73,11 +124,11 @@ flex-wrap:wrap;
 }
 article .profile_detail dt{
 margin:10px 0;
-width:30%;
+width:25%;
 }
 article .profile_detail dd{
 margin:10px 0;
-width:70%;
+width:75%;
 }
 article .profile_detail ul{
 margin:10px ;
