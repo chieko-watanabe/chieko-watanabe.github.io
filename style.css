@@ -9,14 +9,15 @@ box-sizing:border-box;
 }
 
 html{
-font-size:16px;
 scroll-behavior: smooth;
+font-size:16px;
 }
 
 body {
 font-family:"MS Pゴシック",sans-serif;
 color:#333;
 line-height:1.5;
+font-size:16px;
 }
 
 .page_wrap{
@@ -35,6 +36,10 @@ flex-wrap:nowrap;
 
 img{
 vertical-align:bottom;
+}
+
+p,ul,li,dl{
+font-size:1rem;
 }
 
 /*=========================================
@@ -101,13 +106,21 @@ margin-top:50px;
 margin-bottom:50px;
 }
 
+article h1{
+margin-bottom:50px;
+font-size:1.5rem;
+font-weight:bold;
+}
+
 article h2{
 margin-bottom:20px;
+font-size:1.5rem;
 font-weight:normal;
 }
 
 article h3{
 margin-bottom:15px;
+font-size:1.17rem;
 font-weight:normal;
 }
 
@@ -241,7 +254,7 @@ text-align:right;
 
 #profile_wrap .prof_button a{
 display:inline-block;
-background:#84b1a0;
+background:#82b797;
 padding:10px 10px 10px 25px;
 color:#fff;
 text-decoration:none;
