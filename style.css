@@ -43,7 +43,7 @@ template
 
 /* header */
 header{
-background:#e3e2dd;
+background:#d9d6c6;
 }
 
 header .page_wrap{
@@ -103,10 +103,12 @@ margin-bottom:50px;
 
 article h2{
 margin-bottom:20px;
+font-weight:normal;
 }
 
 article h3{
 margin-bottom:15px;
+font-weight:normal;
 }
 
 article section{
@@ -143,7 +145,7 @@ padding-right:5px;
 
 /* footer */
 footer{
-background:#e3e2dd;
+background:#d9d6c6;
 }
 
 footer .page_wrap{
@@ -173,6 +175,19 @@ padding-left:40px;
 background-position: 0px 5px;
 background-repeat:no-repeat;
 background-size	:30px;
+position:relative;
+}
+
+#toppage h2:after{
+content:"";
+width:100%;
+height:5px;
+ background-image : linear-gradient(to right, #d9d6c6 3px, transparent 3px);
+ background-size: 13px 4px;
+ background-repeat: repeat-x;
+position:absolute;
+left:0;
+bottom:-6px;
 }
 
 #toppage h3{
