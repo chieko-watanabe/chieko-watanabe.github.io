@@ -1,13 +1,62 @@
 /*=========================================
-　スマホ・タブレット用レスポンシブ
+  タブレット以下レスポンシブ
 -----------------------------------------*/
 @media screen and (max-width:768px) {
   .flex_box {
     display: block;
   }
 
+  .path .flex_box {
+    display: flex;
+  }
+
   /* -------------------------------------
     トップページ
-    ------------------------------------- */
+  ------------------------------------- */
 
+  #profile_wrap .profile_img_wrap {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  #profile_wrap .profile_content {
+    margin-left: 0;
+  }
+
+  #works_wrap ul li {
+    width: 49%;
+  }
+
+  /* -------------------------------------
+    制作実績
+  ------------------------------------- */
+  article .product_thumnail li {
+    margin-left: 0;
+  }
+
+  article .works_info .left,
+  article .works_info .right {
+    width: 100%;
+  }
+
+  article .works_info .left {
+    background-image: linear-gradient(to right, #fff 3px, transparent 3px);
+    background-size: 12px 3px;
+    background-repeat: repeat-x;
+    background-position: bottom left;
+  }
+
+  article .works_info .right div:first-child {
+    padding-top: 20px;
+  }
+
+  .profile_img_wrap {
+    width: auto;
+  }
+}
+
+@media screen and (max-width:480px) {
+  #works_wrap ul li {
+    width: 100%;
+  }
 }

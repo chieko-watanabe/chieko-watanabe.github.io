@@ -16,13 +16,18 @@
 /* プロフィール */
 #profile_wrap {
   margin-bottom: 50px;
-  justify-content: flex-end;
+}
+
+.profile_img_wrap {
+  width: 35%;
+  text-align: center;
 }
 
 #profile_wrap h2 {
   padding-top: 3px;
   background-image: url(img/plofile_h2.png);
 }
+
 
 #profile_wrap img {
   max-width: 300px;
