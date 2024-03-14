@@ -155,16 +155,9 @@ article .works_info h3 {
   font-size: 1rem;
 }
 
-article .works_info h3::before {
-  content: "【"
-}
 
-article .works_info h3::after {
-  content: "】"
-}
-
-article .works_info p {
-  margin: 0 5px;
+article .works_info a {
+  overflow-wrap: break-word;
 }
 
 article .works_info .left {
