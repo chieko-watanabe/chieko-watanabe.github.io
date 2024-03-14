@@ -204,13 +204,35 @@ article .profile_introduction {
   margin-bottom: 30px;
 }
 
+.profile_introduction .flex_box {
+  width: 800px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.profile_img_wrap {
+  width: 25%;
+}
+
+.profile_img_wrap img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+}
+
+.profile_content {
+  padding-left: 30px;
+}
+
 article .profile_introduction dl {
   display: flex;
   flex-wrap: wrap;
 }
 
 article .profile_introduction dt {
-  width: 150px;
+  width: 110px;
 }
 
 article .profile_detail {
