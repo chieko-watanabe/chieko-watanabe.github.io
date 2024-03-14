@@ -12,12 +12,12 @@
   font-size: 80%;
 }
 
-.path ul li:after {
+.path ul li::after {
   content: "\03e";
   padding-left: 5px;
 }
 
-.path ul li:last-child:after {
+.path ul li:last-child::after {
   display: none;
 }
 
@@ -38,8 +38,8 @@ article h1 {
   position: relative;
 }
 
-article h1:before,
-article h1:after {
+article h1::before,
+article h1::after {
   display: block;
   position: absolute;
   content: "";
@@ -48,18 +48,24 @@ article h1:after {
 
 }
 
-article h1:before {
+article h1::before {
   border-top: 2px solid #6f998a;
   border-left: 2px solid #6f998a;
   top: 0;
   left: 0;
 }
 
-article h1:after {
+article h1::after {
   border-bottom: 2px solid #6f998a;
   border-right: 2px solid #6f998a;
   bottom: 0;
   right: 0;
+}
+
+article .product_thumnail h2::before,
+article .works_info h2::before,
+article .works_desc h2::before {
+  display: none;
 }
 
 article img {
@@ -112,53 +118,57 @@ article .product_thumnail .two_columun li:nth-child(odd) {
 
 
 /* 制作情報 */
-.works_info {
+article .works_info {
   background: #eef1e5;
   border-radius: 5px;
 }
 
-.works_info.flex_box {
+article .works_info.flex_box {
   flex-wrap: wrap;
 }
 
-.works_info h2 {
-  margin-bottom: 10px;
+article .works_info h2 {
+  margin-bottom: 15px;
   padding: 20px 20px 10px 40px;
   border-radius: 5px 5px 0 0;
   width: 100%;
   font-size: 1rem;
   font-weight: bold;
   background: #a2d1b5;
-  position: relative;
 }
 
-.works_info h2:before {
+article .works_info h2::before {
   content: "\0bb";
   color: #fff;
-  padding-right: 10px;
+  display: block;
   position: absolute;
   top: 20px;
   left: 20px;
 }
 
-.works_info h3 {
+article .works_info h2::after {
+  display: none;
+}
+
+article .works_info h3 {
   margin-bottom: 5px;
   font-size: 1rem;
 }
 
-.works_info h3:before {
+article .works_info h3::before {
   content: "【"
 }
 
-.works_info h3:after {
+article .works_info h3::after {
   content: "】"
 }
 
-.works_info>div {
-  width: 50%;
+article .works_info p {
+  margin: 0 5px;
 }
 
-.works_info .left {
+article .works_info .left {
+  width: 60%;
   padding: 0 20px 20px 20px;
   background-image: linear-gradient(to bottom, #fff 3px, transparent 3px);
   background-size: 3px 12px;
@@ -166,11 +176,12 @@ article .product_thumnail .two_columun li:nth-child(odd) {
   background-position: top right;
 }
 
-.works_info .right {
+article .works_info .right {
+  width: 40%;
   padding-left: 0;
 }
 
-.works_info .right div {
+article .works_info .right div {
   padding: 20px;
   background-image: linear-gradient(to right, #fff 3px, transparent 3px);
   background-size: 12px 3px;
@@ -178,7 +189,7 @@ article .product_thumnail .two_columun li:nth-child(odd) {
   background-position: top left;
 }
 
-.works_info .right div:first-child {
+article .works_info .right div:first-child {
   padding-top: 0;
   background: none;
 }
