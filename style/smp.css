@@ -14,12 +14,13 @@
     トップページ
   ------------------------------------- */
 
-  #profile_wrap .profile_img_wrap {
+  .profile_img_wrap {
     width: auto;
     margin-bottom: 20px;
+    text-align: center;
   }
 
-  #profile_wrap .profile_content {
+  .profile_content {
     margin-left: 0;
   }
 
@@ -50,7 +51,12 @@
     padding-top: 20px;
   }
 
-  .profile_img_wrap {
+
+
+  /* -------------------------------------
+    プロフィール
+  ------------------------------------- */
+  .profile_introduction .flex_box {
     width: auto;
   }
 }
@@ -58,5 +64,9 @@
 @media screen and (max-width:480px) {
   #works_wrap ul li {
     width: 100%;
+  }
+
+  .profile_img_wrap img {
+    max-width: 200px;
   }
 }
