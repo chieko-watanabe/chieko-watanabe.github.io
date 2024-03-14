@@ -81,6 +81,7 @@ article .product_thumnail {
 article .product_thumnail li {
   list-style: none;
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 article .product_thumnail li:first-child {
@@ -91,13 +92,18 @@ article .product_thumnail img {
   border: 1px solid #aaa;
 }
 
-article .product_thumnail img.none {
+article .product_thumnail img.no_border {
   border: none;
 }
 
 /* 作例　2列表示 */
 article .product_thumnail .two_columun {
   flex-wrap: wrap;
+}
+
+article .product_thumnail .two_columun li {
+  width: 48%;
+  margin-left: 2%;
 }
 
 article .product_thumnail .two_columun li:nth-child(odd) {

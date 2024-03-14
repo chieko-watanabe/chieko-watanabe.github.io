@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>ECサイトレビュー機能実装｜渡辺知映子ポートフォリオ</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/pages.css">
   </head>
 
   <body>
@@ -39,48 +39,55 @@
               alt="商品詳細ページにレビューが表示されている"></li>
           <li><img src="../pages/img/review_detail.png" alt="レビュー一覧のイメージ"></li>
           <li><img src="../pages/img/review_post.png" alt="レビュー投稿画面のイメージ"></li>
-        </div>
+        </ul>
+      </div>
 
-        <section>
-          <h2>公開ページ</h2>
+      <section class="works_info flex_box">
+
+        <h2>制作情報</h2>
+        <div class="left">
+          <h3>公開ページ</h3>
           <p><a
               href="https://www.e-tomcat.com/view/item/000000000175">https://www.e-tomcat.com/view/item/000000000175</a></p>
-        </section>
-
-        <section>
-          <h2>制作期間</h2>
-          <p>1.5ヶ月</p>
-        </section>
-
-        <section>
-          <h2>担当業務</h2>
-          <p>UIデザイン、コーディング</p>
-        </section>
-
-        <section>
-          <h2>概要</h2>
-          <p>ECサイト構築サービス（makeshop）を用いて、レビュー投稿フォーム・レビュー閲覧ページ・商品ページ内からレビューを参照する機能を実装しました。<br>
-            smartyを元にしたサービス独自タグを用い、表示切り分け処理（レビューがある場合/ない場合）も実装しました。</p>
-        </section>
-        <p class="go_to_head"><a href="#">このページの先頭に戻る</a></p>
-        <p class="to_back"><a href="../index.html">トップページに戻る</a></p>
-      </article>
-
-      <footer>
-        <div class="page_wrap">
-
-          <nav>
-
-            <ul>
-              <li><a href="../index.html#profile">プロフィール</a></li>
-              <li><a href="../index.html#works">制作実績</a></li>
-              <li><a href="../index.html#personal">経験スキル</a></li>
-            </ul>
-
-          </nav>
-          <p class="copyright">&#169; ChiekoWatanabe all rights reserved.</p>
         </div>
-      </footer>
 
-    </body>
-  </html>
+        <div class="right">
+          <div>
+            <h3>制作期間</h2>
+            <p>1.5ヶ月</p>
+          </div>
+          <div>
+            <h3>担当業務</h3>
+            <p>UIデザイン、コーディング</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="works_desc">
+        <h2>概要</h2>
+        <p>ECサイト構築サービス（makeshop）を用いて、レビュー投稿フォーム・レビュー閲覧ページ・商品ページ内からレビューを参照する機能を実装しました。<br>
+          smartyを元にしたサービス独自タグを用い、表示切り分け処理（レビューがある場合/ない場合）も実装しました。</p>
+      </section>
+
+      <p class="go_to_head"><a href="#">このページの先頭に戻る</a></p>
+      <p class="to_back"><a href="../index.html">トップページに戻る</a></p>
+    </article>
+
+    <footer>
+      <div class="page_wrap">
+
+        <nav>
+
+          <ul>
+            <li><a href="../index.html#profile">プロフィール</a></li>
+            <li><a href="../index.html#works">制作実績</a></li>
+            <li><a href="../index.html#personal">経験スキル</a></li>
+          </ul>
+
+        </nav>
+        <p class="copyright">&#169; ChiekoWatanabe all rights reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
