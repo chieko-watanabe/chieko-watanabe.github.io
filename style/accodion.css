@@ -12,6 +12,7 @@ button {
   cursor: pointer;
   text-align: left;
   font-size: 1em;
+  padding-right: 50px;
 }
 
 button:hover::before,
