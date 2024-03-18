@@ -136,9 +136,39 @@
   padding: 5px 10px;
 }
 
-/* スキル */
-#personal_wrap h2 {
+/* 自己PR */
+#pr_wrap h2 {
   margin-top: 3px;
-  padding-top: 2px;
-  background-image: url(img/personal_h2.png);
+  padding-top: 5px;
+  background-image: url(img/pr_h2.png);
+}
+
+#pr_wrap section {
+  margin-bottom: 20px;
+}
+
+#pr_wrap .flex_box {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#pr_wrap h3 {
+  width: 100%;
+}
+
+#pr_wrap .flex_box .desc {
+  width: 67%;
+}
+
+#pr_wrap .flex_box .img {
+  width: 30%;
+}
+
+#pr_wrap .flex_box img {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+#pr_wrap .flex_box:nth-child(odd) {
+  flex-direction: row-reverse;
 }
