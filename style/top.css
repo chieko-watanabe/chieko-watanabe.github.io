@@ -83,6 +83,7 @@
 
 #profile_wrap .prof_button a:hover {
   background: #709487;
+  transition: .5s;
 }
 
 /* 制作実績 */
@@ -118,6 +119,7 @@
 
 #works_wrap ul li img:hover {
   opacity: 0.8;
+  transition: .5s;
 }
 
 #works_wrap ul li a {
