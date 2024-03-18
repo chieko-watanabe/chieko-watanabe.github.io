@@ -143,11 +143,11 @@
   background-image: url(img/pr_h2.png);
 }
 
-#pr_wrap section {
+#pr_wrap>div {
   margin-bottom: 20px;
 }
 
-#pr_wrap section:last-child {
+#pr_wrap>div:last-child {
   margin-bottom: 0;
 }
 
