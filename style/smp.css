@@ -28,6 +28,17 @@
     width: 49%;
   }
 
+  #pr_wrap .flex_box .desc {
+    width: 100%;
+  }
+
+  #pr_wrap .flex_box .img {
+    width: auto;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   /* -------------------------------------
     制作実績
   ------------------------------------- */
