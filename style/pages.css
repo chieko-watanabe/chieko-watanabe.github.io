@@ -296,6 +296,10 @@ article .profile_detail dt {
   width: 25%;
 }
 
+article .profile_detail dt .supplement {
+  display: block;
+}
+
 article .profile_detail dd {
   margin: 10px 0;
   width: 75%;

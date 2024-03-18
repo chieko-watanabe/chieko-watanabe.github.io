@@ -20,7 +20,7 @@
     text-align: center;
   }
 
-  .profile_content {
+  #profile_wrap .profile_content {
     margin-left: 0;
   }
 
@@ -67,10 +67,36 @@
   /* -------------------------------------
     プロフィール
   ------------------------------------- */
+  .profile_index.flex_box {
+    display: flex;
+  }
+
   .profile_introduction .flex_box {
     width: auto;
   }
+
+  article .profile_detail dt,
+  article .profile_detail dd {
+    width: 100%;
+  }
+
+  article .profile_detail dt {
+    margin: 0;
+    font-size: 95%;
+  }
+
+  article .profile_detail dt .supplement {
+    display: inline-block;
+  }
+
+  article .profile_detail dd {
+    margin: 5px 0 20px 0;
+  }
 }
+
+/* -------------------------------------
+スマホ時のみ適用
+------------------------------------- */
 
 @media screen and (max-width:480px) {
   #works_wrap ul li {
