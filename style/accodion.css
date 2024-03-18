@@ -19,7 +19,7 @@ button {
 
 button:hover::before,
 button:hover::after {
-  background: #666;
+  background: #468860;
 }
 
 /* 矢印 */
