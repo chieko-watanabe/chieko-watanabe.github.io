@@ -147,6 +147,10 @@
   margin-bottom: 20px;
 }
 
+#pr_wrap section:last-child {
+  margin-bottom: 0;
+}
+
 #pr_wrap .flex_box {
   flex-wrap: wrap;
   justify-content: space-between;
