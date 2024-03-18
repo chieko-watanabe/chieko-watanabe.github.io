@@ -1,0 +1,62 @@
+.include-accordion .inner {
+  /* 必須 */
+  height: 0;
+  padding: 0;
+  /* 必須 */
+  overflow: hidden;
+  /* 必須 */
+  transition: .5s;
+}
+
+button {
+  position: relative;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1em;
+}
+
+button:hover::before,
+button:hover::after {
+  background: #666;
+}
+
+/* 矢印 */
+button::before,
+button::after {
+  padding-bottom: 1px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 1.5px;
+  height: 8px;
+  transition: .5s;
+  background: #aaa;
+}
+
+button::before {
+  transform: translateY(-50%) rotate(-45deg);
+  right: 35px;
+}
+
+button::after {
+  transform: translateY(-50%) rotate(45deg);
+  right: 30px;
+}
+
+.include-accordion .active button::before {
+  transform: translateY(-50%) rotate(-135deg);
+  transition: .5s;
+}
+
+.include-accordion .active button::after {
+  transform: translateY(-50%) rotate(135deg);
+  transition: .5s;
+}
+
+
+.include-accordion.active {
+  /* 必須 */
+  overflow-y: auto;
+}
