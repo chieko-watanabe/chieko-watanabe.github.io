@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ポートフォリオ</title>
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/top.css">
     <link rel="stylesheet" href="style/smp.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <header>
@@ -16,7 +19,7 @@
           <ul>
             <li><a href="#profile">プロフィール</a></li>
             <li><a href="#works">制作実績</a></li>
-            <li><a href="#personal">経験スキル</a></li>
+            <li><a href="#pr_wrap">自己PR</a></li>
           </ul>
 
         </nav>
@@ -79,68 +82,29 @@
 
       </div>
 
-      <div id="personal_wrap">
-        <h2 id="personal">経験スキル</h2>
-        <table>
-          <caption>Web制作に関わるスキル</caption>
-          <thead>
-            <tr><th>スキル</th><th>経験年数</th><th>備考</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>html、css</th><td>4年半</td><td
-                class="align_left">静的Webページの作成が可能</td>
-            </tr>
-            <tr>
-              <th>javascript</th><td>1年半</td><td
-                class="align_left">既存コードの解読・軽微な修正ができる程度（勉強中）</td>
-            </tr>
-            <tr>
-              <th>photoshop</th><td>4年半</td><td
-                class="align_left">バナー制作、既存のレイアウトを基にしたWebページデザイン経験あり<br>
-                psdのデザインデータからコーディング用素材の切り出しができる</td>
-            </tr>
-            <tr>
-              <th>Illustrator</th><td>1年半</td><td
-                class="align_left">素材切り出し、軽微な修正が出来る程度</td>
-            </tr>
-            <tr>
-              <th>GitHub</th><td>1年半</td><td></td>
-            </tr>
-            <tr>
-              <th>VScode</th><td>1年半</td><td></td>
-            </tr>
-            <tr>
-              <th>DreamWeaver</th><td>3年</td><td></td>
-            </tr>
-            <tr>
-              <th>Ruby、jquery、node.js、smarty</th><td></td><td
-                class="align_left">作業環境内に組み込まれており、軽微な修正などで触った経験あり</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table>
-          <caption>資料作成系スキル</caption>
-          <thead>
-            <tr><th>スキル</th><th>経験年数</th><th>備考</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Word、Googleドキュメント</th><td>4年半</td><td
-                class="align_left">表、資料作成が可能なレベル</td>
-            </tr>
-            <tr>
-              <th>Excel、Googleスプレッドシート</th><td>4年半</td><td
-                class="align_left">IF関数使用が可能なレベル</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>そのほかSlack・Trelloなどのコミュニケーションツール使用経験あり</p>
-
-      </div>
+      <div id="pr_wrap">
+        <h2 id="personal_pr">自己PR</h2>
+        <div class="flex_box">
+          <div class="desc">
+          <h3>相手の立場に寄り添う行動</h3>
+          <p>相手の求めているものを探るべく、とにかく相手の話を聞くようにしています。<br>
+            実際に口に出ている要望だけで判断するのではなく、本当に求めている事柄を探るために会話を重ね、自分が提供できるものをすりあわせました。<br>
+            双方が満足できる状態を作れるように聞き取り、考える力を身につける経験となりました。<br>
+            現職では販売戦略担当の要望とモール・システム側の制約で折り合いがつかない事もありました。そういった中で、こちらが出来うる対応の範囲で困りごとの解決方法を提案したり、出来ないことはしっかりと伝えた上で気持ちに寄り添ったり、納得してもらいやすい対応を考える経験を積みました。</p>
+          </div>
+          <p class="img"><img src="img/pr_img1.png" alt="話し合っているイメージ"></p>
+        </div>
+        <div class="flex_box">
+          <div class="desc">
+            <h3>知らない事を調べ・身につける探究心</h3>
+            <p>わからないことがあればまず自分で調べ、理解できるまでかみ砕いて自分に落とし込む事を常に意識していました。<br>
+              IT業界は技術のはやり廃りも多いため、調べた内容が今の情勢と違っていることもあり、「今の自分に必要な情報」を必ず考えながら調査をしていました。<br>
+            現職では、日本語以外のドキュメントを読むことも多くありましたが、頻出英単語を頭に叩き込む・翻訳サイトを活用するなどめげずに知識をつけていきました。<br>
+            転職に伴い、今までの業務とは違う領域へのチャレンジの際は、これまでの経験を踏み台に勉強や努力を惜しまず、一刻も早くほかの方の役に立てるように邁進します。</p>
+          </div>
+          <p class="img"><img src="img/pr_img2.png" alt="勉強をしているイメージ"></p>
+        </div>
+        </div>
       <p class="go_to_head"><a href="#">このページの先頭に戻る</a></p>
     </article>
 
@@ -152,7 +116,7 @@
           <ul>
             <li><a href="#profile">プロフィール</a></li>
             <li><a href="#works">制作実績</a></li>
-            <li><a href="#personal">経験スキル</a></li>
+            <li><a href="#pr_wrap">自己PR</a></li>
           </ul>
 
         </nav>

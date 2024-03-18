@@ -136,59 +136,44 @@
   padding: 5px 10px;
 }
 
-/* スキル */
-#personal_wrap h2 {
+/* 自己PR */
+#pr_wrap h2 {
   margin-top: 3px;
-  padding-top: 2px;
-  background-image: url(img/personal_h2.png);
+  padding-top: 5px;
+  background-image: url(img/pr_h2.png);
 }
 
-/* tableデザイン */
-#personal_wrap table {
-  margin-bottom: 30px;
+#pr_wrap>div {
+  margin-bottom: 20px;
+}
+
+#pr_wrap>div:last-child {
+  margin-bottom: 0;
+}
+
+#pr_wrap .flex_box {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#pr_wrap h3 {
   width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
-#personal_wrap table caption {
-  text-align: left;
-  padding: 5px 10px;
+#pr_wrap .flex_box .desc {
+  width: 67%;
 }
 
-#personal_wrap table tr th:first-child {
-  width: 25%;
+#pr_wrap .flex_box .img {
+  width: 30%;
 }
 
-#personal_wrap table thead tr {
-  background: #a2d1b5;
+#pr_wrap .flex_box img {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  width: 100%;
 }
 
-#personal_wrap table thead th:first-child {
-  border-right: 2px dotted #fff;
-  border-radius: 5px 0 0 0;
-}
-
-#personal_wrap table thead th:last-child {
-  border-radius: 0 5px 0 0;
-}
-
-#personal_wrap table th, table td {
-  padding: 10px 5px;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
-}
-
-#personal_wrap table th:first-child {
-  border-right: 2px dotted #ccc;
-}
-
-#personal_wrap table tr:nth-child(even) {
-  background-color: #fbfaf9;
-}
-
-
-#personal_wrap table td.align_left {
-  text-align: left;
-  padding-left: 20px;
+#pr_wrap .flex_box:nth-child(odd) {
+  flex-direction: row-reverse;
 }
